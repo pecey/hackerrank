@@ -4,12 +4,12 @@ stack = []
 for i in range(0,Q):
 	command = raw_input()
 	if int(command[0]) == 1:
+		stack.append(S)
 		text = command.split()[1]
 		S+=text
-		stack.append(S)
 	elif int(command[0]) == 2:
-		index = int(command.split()[1]) * -1
 		stack.append(S)
+		index = int(command.split()[1]) * -1
 		S=S[:index]
 	elif int(command[0]) == 3:
 		index = int(command.split()[1])
